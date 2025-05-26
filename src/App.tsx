@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Modal } from "./Components/Modal/Modal"
 import { Qviz } from "./Components/Qviz/Qviz"
 import './style/global.css'
+import { WindowUseres } from "./Components/Users/WindowUsers"
 
 function App() {
 
@@ -16,6 +17,7 @@ const closeModal = () =>setIsOpen(false)
         <Qviz />
         {isOpen && <Modal closeModal={closeModal} />}
         {!isOpen && <button onClick={openModal}>Открыть окно</button>}
+        <WindowUseres />
       </h2>
     </>
   )
