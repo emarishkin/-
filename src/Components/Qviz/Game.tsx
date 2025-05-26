@@ -3,7 +3,7 @@ import type { IQuest } from "./QuastionsType";
 
 interface GameProps{
 quastion:IQuest
-handleClick:()=>void
+handleClick:(index:number)=>void
 }
 
 export const Game:FC<GameProps> = ({quastion, handleClick}) => {
@@ -13,13 +13,12 @@ export const Game:FC<GameProps> = ({quastion, handleClick}) => {
            <div>
                <ul>
                  {quastion.variants.map((text,index)=>(
-                    <li key={index}>
+                    <li onClick={()=>handleClick(index)} key={text}>
                         {text}
                     </li>
                  ))}
                </ul>
            </div>
-           <button onClick={handleClick}>ответить</button>
         </div>
     )
 }

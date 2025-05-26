@@ -11,16 +11,30 @@ export const Qviz:FC<QvizProps> = () => {
 
 const [step,setStep] = useState<number>(0)
 const quastion = Quastions[step]
+const [correct,setCorrect] = useState<number>(0)
 
-const handleClick = () => {
+const handleClick = (index:number) => {
+    console.log(step,index)
     setStep(step+1)
+
+    if(index === quastion.correct){
+        setCorrect(correct+1)
+    }
 }
+
+ const resetQuiz = () => {
+        setStep(0);
+        setCorrect(0);
+    };
 
     return(
         <section>
             <div>
-                <Game quastion={quastion} handleClick={handleClick} />
-                <Result />
+                {step < Quastions.length ? (
+                    <Game quastion={quastion} handleClick={handleClick} />
+                ) : (
+                    <Result correct={correct}  onRestart={resetQuiz} />
+                )}
             </div>
         </section>
     )
