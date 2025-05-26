@@ -33,7 +33,7 @@ const handleClick = (index:number) => {
                 {step < Quastions.length ? (
                     <Game quastion={quastion} handleClick={handleClick} />
                 ) : (
-                    <Result correct={correct}  onRestart={resetQuiz} />
+                    <Result correct={correct} total={Quastions.length}  onRestart={resetQuiz} />
                 )}
             </div>
         </section>

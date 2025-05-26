@@ -1,0 +1,43 @@
+.container {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.variantsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.variantItem {
+  background: #f8f9fa;
+  border: 2px solid #e9ecef;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 18px;
+}
+
+.variantItem:hover {
+  background: #e9ecef;
+  transform: translateY(-2px);
+}
+
+.variantItem:active {
+  transform: translateY(0);
+}

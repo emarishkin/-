@@ -1,4 +1,5 @@
 import { Qviz } from "./Components/Qviz/Qviz"
+import './style/global.css'
 
 function App() {
   return (

@@ -1,0 +1,38 @@
+.resultContainer {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 32px;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px;
+  text-align: center;
+}
+
+.resultImage {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.resultTitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #2c3e50;
+}
+
+.restartButton {
+  background: #4e44ce;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.restartButton:hover {
+  background: #3a32a8;
+}
